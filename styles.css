@@ -1,0 +1,122 @@
+@import url('https://cdn.jsdelivr.net/npm/@fontsource/iosevka/400.css');
+
+:root {
+    --void: #2c2c2c;  /* structural concrete */
+    --oxide: #b8d8d8; /* primary copper */
+    --bleed: #a86473; /* interaction rot */
+    --ghost: #e0e0e0; /* primary text chalk */
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("assets/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: var(--void);
+    color: var(--ghost); 
+    font-family: 'Iosevka', 'Courier New', monospace;
+    font-size: 18px; 
+    line-height: 1.6;
+}
+
+main { 
+    min-height: 100vh;
+    width: min(720px, 100%);
+    margin: 0 auto;
+    padding: 4rem 2rem 0 2rem;
+    box-sizing: border-box;
+    background: var(--void);
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3 {
+    color: var(--oxide);
+    margin-top: 0;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;  
+    margin-bottom: 3rem;
+}
+
+header h1, header p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+header a {
+    color: var(--oxide);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--oxide);
+    transition: color 0.1s linear, border-bottom-color 0.1s linear;
+}
+
+header a:hover {
+    color: var(--bleed);
+    border-bottom-color: var(--bleed);
+}
+
+section {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+section p {
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: auto 0 3rem 0; 
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-list a {
+    display: inline-block;
+    color: var(--oxide);
+    transition: color 0.1s linear, transform 0.1s linear; 
+}
+
+.contact-list svg {
+    width: 28px;
+    height: 28px;
+    fill: currentColor;
+}
+
+.contact-list a:hover {
+    color: var(--bleed);
+    transform: translateY(-4px); 
+}
+
+footer {
+    padding-bottom: 2rem;
+    opacity: 0.35;
+    width: 100%;
+}
+
+footer p {
+    font-size: 12px; 
+    color: var(--ghost);
+    text-align: center;
+    margin: 0;
+}
