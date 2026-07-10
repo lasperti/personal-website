@@ -81,6 +81,37 @@ section p {
     margin-bottom: 1.5rem;
 }
 
+.router {
+  width: 100%;
+  margin: 2rem 0 auto 0; 
+  display: flex;
+  justify-content: center;
+}
+
+.router ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.router a {
+  display: inline-block;
+  color: var(--oxide);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  transition: color 0.1s linear
+}
+
+.router a:hover {
+  color: var(--bleed);
+}
+
 .contact-list {
     list-style: none;
     padding: 0;
