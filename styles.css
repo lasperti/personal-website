@@ -105,7 +105,7 @@ section p {
   font-weight: bold;
   font-size: 1.2rem;
   padding: 0.5rem 1rem;
-  transition: color 0.1s linear
+  transition: color 0.1s linear;
 }
 
 .router a:hover {
