@@ -32,10 +32,16 @@
 	<p>I am optimizing for friction. The goal is to force new mental models, building the absolute cognitive adaptability required to map, approach, and dismantle any system I encounter, regardless of its underlying architecture.</p>
       </section>
 
-      <footer>
-        <p>"Discipline is never an end in itself, only a means to an end."</p>
-      </footer>
+<div id="system-footer"></div>
 
     </main>
+
+    <script>
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('system-footer').innerHTML = data;
+        });
+    </script>
   </body>
 </html>

@@ -22,11 +22,16 @@
           
         </ul>
       </section>
-
-      <footer>
-        <p>"Discipline is never an end in itself, only a means to an end."</p>
-      </footer>
+      <div id="system-footer"></div>
 
     </main>
+
+    <script>
+      fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('system-footer').innerHTML = data;
+    });
+    </script>
   </body>
 </html>
