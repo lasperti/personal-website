@@ -59,6 +59,15 @@ header h1, header p {
     margin-bottom: 0.5rem;
 }
 
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  border: 2px solid var(--bleed); 
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
 header a {
     color: var(--oxide);
     text-decoration: none;
